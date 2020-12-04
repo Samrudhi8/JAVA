@@ -1,7 +1,18 @@
-public class HelloWorld 
-{ 
-public static void main(String[] args) 
-{ 
-System.out.println("Hello, World"); 
-} 
+package hello.world;
+
+/**
+ *
+ * @author samru
+ */
+public class HELLOWORLD {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("HELLO! WORLD");
+    }
+    
 }
+
