@@ -1,0 +1,59 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package employee;
+
+/**
+ *
+ * @author samru
+ */
+import java.util.Scanner;
+ 
+public class Employee {
+ 
+ int year;
+ String name;
+ int salary;
+ String address;
+ 
+ public void getInput() {
+ 
+  Scanner in = new Scanner(System.in);
+  System.out.print("Enter the year of joining :: ");
+  year = in.nextInt();
+  System.out.print("Enter the name :: ");
+  name = in.next();
+  System.out.print("Enter the salary :: ");
+  salary = in.nextInt();
+  System.out.print("Enter the address :: ");
+  address = in.next();
+ }
+ 
+ public void display() {
+  
+  System.out.println("Employee's year of joining = " + year);
+  System.out.println("Employee name = " + name);
+  System.out.println("Employee salary = " + salary);
+  System.out.println("Emloyee address = " + address);
+ }
+ 
+ public static void main(String[] args) {
+ 
+  Employee e[] = new Employee[5];
+  
+  for(int i=0; i<3; i++) {
+   
+   e[i] = new Employee();
+   e[i].getInput();
+  }
+  
+  System.out.println("**** Data Entered as below ****");
+  
+  for(int i=0; i<3; i++) {
+   
+   e[i].display();
+  }
+ }
+}
